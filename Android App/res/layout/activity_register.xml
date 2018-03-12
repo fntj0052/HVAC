@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="com.mhsm0034.fntj0052.hvac.RegisterActivity">
+
+    <EditText
+        android:id="@+id/editNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/registerText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editNameText"
+        android:layout_alignStart="@+id/editNameText"
+        android:layout_below="@+id/editNameText"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/editEmailText"
+        android:layout_alignLeft="@+id/editEmailText"
+        android:layout_alignStart="@+id/editEmailText" />
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp" />
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_above="@+id/buttonBack"
+        android:layout_alignLeft="@+id/buttonBack"
+        android:layout_alignStart="@+id/buttonBack" />
+
+    <EditText
+        android:id="@+id/editConfrimText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editPasswordText"
+        android:layout_alignStart="@+id/editPasswordText"
+        android:layout_below="@+id/editPasswordText"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Confrim Password"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="back"
+        android:text="Back"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

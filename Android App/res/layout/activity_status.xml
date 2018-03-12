@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mhsm0034.fntj0052.hvac.StatusActivity">
+
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="Status"
+        android:textSize="30sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:text="Temp:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTemp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textMainT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTemp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="Last Maintained:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editMainT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTemp"
+        android:layout_alignRight="@+id/editTemp"
+        android:layout_below="@+id/textMainT"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textHeader"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textHeader"
+        android:layout_marginBottom="38dp"
+        android:onClick="reset"
+        android:text="Reset" />
+</RelativeLayout>
