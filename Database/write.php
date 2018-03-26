@@ -4,7 +4,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "INSERT INTO data (email, moisture, temp, sound) VALUES ('".$_POST['email']."', '".$_POST['moisture']."', '".$_POST['temp']."', '".$_POST['sound']."')";
+$sql = "INSERT INTO hvac (email, moisture, temp, sound) VALUES ('".$_POST['email']."', '".$_POST['moisture']."', '".$_POST['temp']."', '".$_POST['sound']."')";
 echo $sql;
 
 if ($connect->query($sql) === TRUE) {
