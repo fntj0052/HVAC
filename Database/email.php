@@ -1,6 +1,6 @@
 <?php
 include('top-cache.php');
-$sql = "SELECT * FROM hvac ORDER BY id DESC LIMIT 1";
+$sql = "SELECT email FROM hvac ORDER BY id DESC LIMIT 1";
 
 $connect = mysqli_connect("localhost", "justlik6_hvacusr", "8XtY@$7C", "justlik6_hvac");
 
