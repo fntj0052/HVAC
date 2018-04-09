@@ -346,13 +346,16 @@ int main (int argc, char *argv[])
                   moistureread = moistureSensor();
 
 			padPressed = digitalRead(padPin);
-			if(padPressed)
+
+                  if(padPressed)
 			{
 				if(alreadyPressed){}
 				else
 				{
                               strcpy(hvacStatus, "Pressed");
-					alreadyPressed = 1;
+                              printf("SHUTDOWN OF PROGRAM INITIATED");
+                              //alreadyPressed = 1;
+                              return 0;
 			      }
 			}
 			else
